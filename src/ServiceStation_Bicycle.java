@@ -1,3 +1,4 @@
+
 public class ServiceStation_Bicycle implements ServiceStation {
     @Override
     public void check(Car[] car, Bicycle[] bicycle, Truck[] truck) {
