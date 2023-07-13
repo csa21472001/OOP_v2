@@ -1,16 +1,14 @@
-public class Truck extends TransportPark{
-
-
-
+public class Truck extends MotoTransport {
     public Truck(String modelName, int wheelsCount) {
-        super(modelName,wheelsCount);
-    }
-
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+        super(modelName, wheelsCount);
     }
 
     public void checkTrailer() {
         System.out.println("Проверяем прицеп");
+    }
+
+    public void service() {
+        super.service();
+        checkTrailer();
     }
 }

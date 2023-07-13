@@ -1,10 +1,6 @@
-public class Car extends TransportPark{
+public class Car extends MotoTransport {
 
     public Car(String modelName, int wheelsCount) {
-        super(modelName,wheelsCount);
-    }
-
-    public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+        super(modelName, wheelsCount);
     }
 }
